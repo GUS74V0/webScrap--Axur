@@ -3,10 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import base64
 
-# 🔐 Token de autenticação recebido por e-mail
 AUTH_TOKEN = "T4IKHuKmLa9y5wiQz6gaXysxTrOM4hot"
 
-# 🌐 URLs fornecidas na avaliação
 SCRAPE_URL = "https://intern.aiaxuropenings.com/scrape/c102c692-7fb4-4c91-8bc4-08f28789cf4d"
 MODEL_URL = "https://intern.aiaxuropenings.com/v1/chat/completions"
 SUBMIT_URL = "https://intern.aiaxuropenings.com/api/submit-response"
@@ -68,7 +66,7 @@ def enviar_imagem(caminho_imagem):
                     "content": [
                         {
                             "type": "image_url",
-                            "image_url": {"url": image_data_url}  # ✅ Aqui está a correção
+                            "image_url": {"url": image_data_url}  
                         },
                         {
                             "type": "text",
@@ -106,7 +104,7 @@ def enviar_imagem(caminho_imagem):
         raise
 
 def enviar_resposta(resposta_json):
-    """Submete a resposta JSON recebida do modelo para a plataforma da Axur."""
+    
     print("📤 Enviando resposta para a plataforma da Axur...")
     headers = {
         "Authorization": f"Bearer {AUTH_TOKEN}",
