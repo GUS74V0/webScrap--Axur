@@ -66,8 +66,14 @@ def enviar_imagem(caminho_imagem):
                 {
                     "role": "user",
                     "content": [
-                        {"type": "image_url", "image_url": image_data_url},
-                        {"type": "text", "text": "<DETAILED_CAPTION>"}
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": image_data_url}  # ✅ Aqui está a correção
+                        },
+                        {
+                            "type": "text",
+                            "text": "<DETAILED_CAPTION>"
+                        }
                     ]
                 }
             ]
@@ -112,7 +118,6 @@ def enviar_resposta(resposta_json):
 
     print("✅ Resposta submetida com sucesso!")
     print("📨 Resposta da API:", response.text)
-
 
 if __name__ == "__main__":
     try:
