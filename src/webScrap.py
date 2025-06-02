@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import base64
 
-AUTH_TOKEN = "T4IKHuKmLa9y5wiQz6gaXysxTrOM4hot"
+AUTH_TOKEN = "..."
 
 SCRAPE_URL = "https://intern.aiaxuropenings.com/scrape/c102c692-7fb4-4c91-8bc4-08f28789cf4d"
 MODEL_URL = "https://intern.aiaxuropenings.com/v1/chat/completions"
