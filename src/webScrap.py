@@ -5,9 +5,9 @@ import base64
 
 AUTH_TOKEN = "..."
 
-SCRAPE_URL = "https://intern.aiaxuropenings.com/scrape/c102c692-7fb4-4c91-8bc4-08f28789cf4d"
-MODEL_URL = "https://intern.aiaxuropenings.com/v1/chat/completions"
-SUBMIT_URL = "https://intern.aiaxuropenings.com/api/submit-response"
+SCRAPE_URL = "..."
+MODEL_URL = "..."
+SUBMIT_URL = "..."
 
 
 def baixar_imagem():
